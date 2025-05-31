@@ -21,7 +21,7 @@ const UserInfo = () => {
   }, [user]);
 
   if (!user) {
-    return <div>No user is signed in.</div>;
+    return <div className="userprofile">No user is signed in.</div>;
   }
 
   return (
