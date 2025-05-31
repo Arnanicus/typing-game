@@ -4,7 +4,7 @@ import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: "AIzaSyCRM4EHWDPBJ4tbXi_7kf7zwIZ7auhTAEw",
-  authDomain: "https://683b3c19f847965bb8b4c306--rococo-lollipop-415bad.netlify.app",
+  authDomain: "qwerts-typinggame.firebaseapp.com",
   projectId: "qwerts-typinggame",
   storageBucket: "qwerts-typinggame.appspot.com", 
   messagingSenderId: "966026477568",

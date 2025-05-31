@@ -9,7 +9,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
 import { onAuthStateChanged } from 'firebase/auth'; 
-import { auth } from '../firebaseconfig';
+import { auth } from '../firebaseConfig';
 import { useNavigate } from 'react-router-dom'
 
 

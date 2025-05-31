@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { auth, db } from '../firebaseconfig';
+import { auth, db } from '../firebaseConfig';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import errorMapping from '../utilities/errorMapping';

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { auth, db } from '../firebaseconfig';
+import { auth, db } from '../firebaseConfig';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { onAuthStateChanged } from 'firebase/auth';
 import ResultTable from '../components/ResultTable';

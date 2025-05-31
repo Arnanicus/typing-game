@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Box, Button, TextField } from '@mui/material';
 import { useTheme } from '../context/ThemeContext';
-import { auth } from '../firebaseconfig';
+import { auth } from '../firebaseConfig';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import errorMapping from '../utilities/errorMapping';
 import { setDoc, doc } from 'firebase/firestore';
-import { db } from '../firebaseconfig'; // Make sure this is correct
+import { db } from '../firebaseConfig'; // Make sure this is correct
 
 const SignupForm = ({ handleClose }) => {
   const [email, setEmail] = useState('');
