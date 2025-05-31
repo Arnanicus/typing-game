@@ -16,6 +16,9 @@ const TypingBox = () => {
     // test time component
     const {testTime} = useTestMode();
 
+    // check if focused
+    const [isFocused, setIsFocused] = useState(true);
+
     // countdown function
     const [countDown, setCountDown] = useState(testTime);
 
@@ -265,6 +268,11 @@ const TypingBox = () => {
         />)
 
         :(<div id='wordbox' onClick={focusInput}>
+          {!isFocused && (
+              <div className="focus-warning">
+                <span>click here to lock in and start typing</span>
+              </div>
+            )}
           <div className="words">
                 {
                   wordsArray.map((word, index) => (
@@ -277,10 +285,12 @@ const TypingBox = () => {
                 }
           </div>
             <input  
-            type='text'
-            className='hidden'
-            ref={inputRef}
-            onKeyDown={handleUserInput}
+              type='text'
+              className='hidden'
+              ref={inputRef}
+              onKeyDown={handleUserInput}
+              onFocus={() => setIsFocused(true)}
+              onBlur={() => setIsFocused(false)}
             />
 
              <div id="button">

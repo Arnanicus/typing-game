@@ -162,6 +162,7 @@ body{
 
 
 #wordbox{
+    position: relative;
     width: 90vw;      
     max-width: 65rem;
     height: auto; 
@@ -393,6 +394,22 @@ body{
     font-size: 1.2rem;
     font-weight: 400;
 }
+
+.focus-warning {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: ${({theme})=>theme.textColor};
+    width: 67rem;
+    height: 13rem;
+    font-weight: 400;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+
+    display: flex; 
+    justify-content: center; 
+    align-items: center;    
 
 `;
 
