@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import AccIcon from '../components/AccIcon';
-import { auth, db } from '../firebaseConfig';
+import { auth, db } from '../firebaseconfig';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { doc, getDoc } from 'firebase/firestore';
 import { Link } from 'react-router-dom';

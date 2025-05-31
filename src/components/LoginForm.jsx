@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Box, Button, TextField } from '@mui/material'
 import { useTheme } from '../context/ThemeContext';
-import { auth } from '../firebaseConfig';
+import { auth } from '../firebaseconfig';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
