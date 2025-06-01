@@ -219,8 +219,9 @@ const TypingBox = () => {
 
     // calculating accuracy
     const calcAcc = () => {
-      if (currentWordIndex === 0) return 0;
-      return Math.round((correctWords / currentWordIndex) * 100);
+      const totalTyped = correctChars + incorrectChars;
+      if (totalTyped === 0) return 0;
+      return Math.round((correctChars / totalTyped) * 100);
     };
 
 
@@ -270,7 +271,7 @@ const TypingBox = () => {
         :(<div id='wordbox' onClick={focusInput}>
           {!isFocused && (
               <div className="focus-warning">
-                <span>click here to lock in and start typing</span>
+                <span>click here to lock in and type</span>
               </div>
             )}
           <div className="words">

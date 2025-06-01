@@ -77,6 +77,7 @@ body{
     justify-content: space-between;
 }
 
+
 #header a{
     max-width: 20rem;
 }
@@ -410,6 +411,94 @@ body{
     display: flex; 
     justify-content: center; 
     align-items: center;    
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+    #logotext{
+        font-size: 1.5rem;  
+    }
+
+    #logosubtext{
+        font-size: 0.8rem;
+    }
+
+    #resultwrap{
+        font-size: 1.2rem;
+    }
+
+    #charsubheading{
+        font-size: 1rem;
+    }
+
+    #acc{
+        flex-direction: column-reverse;
+        gap: 0;
+        width: 100%;
+    }
+
+    .logs{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .username{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .focus-warning{
+        font-size: 0.5rem;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+
+    #resultwrap{
+        font-size: 1rem;
+    }
+
+    #charsubheading{
+        font-size: 
+    }
+
+    #acc{
+        flex-direction: column-reverse;
+        gap: 0;
+        width: 100%;
+    }
+    
+    .username{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        text-align: center;
+        margin-left: 1rem;
+    }
+
+    .logs{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .focus-warning{
+        font-size: 1vw;
+    }
+
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .focus-warning{
+        font-size: 1.5rem;
+    }
+
+}
 
 `;
 
